@@ -6,29 +6,25 @@ There are N points above a 2-dimensional plane. Arrange coordinates in the order
 <h2>Algorithm hint</h2><br>
 Use sorting algorithm. ex) Bubble sort, Selection sort, Merge sort, Quick sort, etc...
 <hr>
-~~~c++
-    #include <iostream>
-    #include <vector>
-    #include <algorithm>
-
-    using namespace std;
-
-    bool comp(pair<int, int> a, pair<int, int> b) {
-	    if (a.first == b.first)
-		    return a.second < b.second;
-    	else
-	    	return a.first < b.first;
-    }
-
-    int main(void) {
-	    int n;
-	    scanf("%d", &n);
-	    vector<pair<int, int>> v(n, make_pair(0,0));
-	    for (int i = 0; i < n; i++)
-		    scanf("%d %d", &v[i].first, &v[i].second);
-	    sort(v.begin(), v.end(), comp);
-	    for (int i = 0; i < n; i++)
-	    	printf("%d %d\n", v[i].first, v[i].second);
-	    return 0;
-    }
-~~~
+Pseudo-code example (Bubble sort)<br>
+<code>
+    for i=(length_of_array-1) downto 1
+        for j=0 to i-1
+            if array[j].x > array[j+1].x then
+                swap(array[j], array[j+1])
+            else if array[j].y > array[j+1].y then
+                swap(array[j], array[j+1])
+        end of j loop
+    end of i loop
+</code>
+출처:<br>
+Baekjoon Online judge 11650번 문제 https://www.acmicpc.net/problem/11650 <br>
+Python source code example<br>
+<code>
+    for i in range(n-1,-1,-1):
+    for j in range(0, i):
+        if arr[j][0]>arr[j+1][0]:
+            arr[j], arr[j+1] = arr[j+1], arr[j]
+        elif arr[j][1]>arr[j+1][1]:
+            arr[j], arr[j+1] = arr[j+1], arr[j]
+</code>
