@@ -1,4 +1,8 @@
-Sorting coordinate
+<h1>Sorting coordinate</h2>
 <hr>
-Problem<br>
-2차원 평면 위의 점 N개가 주어진다. 좌표를 x좌표가 증가하는 순으로, x좌표가 같으면 y좌표가 증가하는 순서로 정렬한 다음 출력하는 프로그램을 작성하시오.
+<h2>Problem</h2><br>
+There are N points above a 2-dimensional plane. Arrange coordinates in the order where x-coordinate increases. If there are points whose x-coordinate is the same for each other, arrange them in the order where y-coordinate increases. Write pseudo-code for solution.
+<hr>
+<h2>Algorithm hint</h2><br>
+Use sorting algorithm. ex) Bubble sort, Selection sort, Merge sort, Quick sort, etc...
+<hr>
