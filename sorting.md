@@ -6,8 +6,9 @@ There are N points above a 2-dimensional plane. Arrange coordinates in the order
 <h2>Algorithm hint</h2><br>
 Use sorting algorithm. ex) Bubble sort, Selection sort, Merge sort, Quick sort, etc...
 <hr>
-Pseudo-code example (Bubble sort)<br>
-<code>
+Pseudo-code example (Bubble sort)
+
+'''
     for i=(length_of_array-1) downto 1
         for j=0 to i-1
             if array[j].x > array[j+1].x then
@@ -16,7 +17,8 @@ Pseudo-code example (Bubble sort)<br>
                 swap(array[j], array[j+1])
         end of j loop
     end of i loop
-</code>
+'''
+
 출처: Baekjoon Online judge 11650번 문제 https://www.acmicpc.net/problem/11650
 
 
