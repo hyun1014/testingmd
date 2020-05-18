@@ -17,14 +17,16 @@ Pseudo-code example (Bubble sort)<br>
         end of j loop
     end of i loop
 </code>
-출처:<br>
-Baekjoon Online judge 11650번 문제 https://www.acmicpc.net/problem/11650 <br>
-Python source code example<br>
-<code>
+출처: Baekjoon Online judge 11650번 문제 https://www.acmicpc.net/problem/11650
+
+
+Python source code example
+
+'''python
     for i in range(n-1,-1,-1):
     for j in range(0, i):
         if arr[j][0]>arr[j+1][0]:
             arr[j], arr[j+1] = arr[j+1], arr[j]
         elif arr[j][1]>arr[j+1][1]:
             arr[j], arr[j+1] = arr[j+1], arr[j]
-</code>
+'''
