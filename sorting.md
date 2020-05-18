@@ -6,8 +6,7 @@ There are N points above a 2-dimensional plane. Arrange coordinates in the order
 <h2>Algorithm hint</h2><br>
 Use sorting algorithm. ex) Bubble sort, Selection sort, Merge sort, Quick sort, etc...
 <hr>
-'''c++
-<code>
+~~~c++
     #include <iostream>
     #include <vector>
     #include <algorithm>
@@ -32,5 +31,4 @@ Use sorting algorithm. ex) Bubble sort, Selection sort, Merge sort, Quick sort, 
 	    	printf("%d %d\n", v[i].first, v[i].second);
 	    return 0;
     }
-</code>
-'''
+~~~
